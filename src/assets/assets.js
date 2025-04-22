@@ -40,13 +40,18 @@ import menu_6 from "./menu_6.avif";
 import menu_7 from "./menu_7.avif";
 import menu_8 from "./menu_8.jpeg";
 
-export const assets = {
-  logo: "/src/assets/logo.jpg",
-  icon: "/src/assets/bag_icon.png",
+import logo from "./logo.jpg";
+import icon from "./bag_icon.png";
+import app_store from "./app_store.jpeg";
+import play_store from "./play_store.jpeg";
 
-  app_store: "/src/assets/app_store.jpeg",
-  play_store: "/src/assets/play_store.jpeg",
+export const assets = {
+  logo,
+  icon,
+  app_store,
+  play_store,
 };
+
 export const menu_list = [
   {
     menu_name: "Salad",
