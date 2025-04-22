@@ -1,0 +1,193 @@
+.navbar {
+  padding: 20px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo {
+  width: 150px;
+}
+
+.navbar-menu {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  color: #49557e;
+  font-size: 18px;
+}
+
+.navbar-right {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.navbar button {
+  background: transparent;
+  font-size: 16px;
+  color: #49557e;
+  border: 1px solid tomato;
+  padding: 10px 30px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.navbar button:hover {
+  background-color: #fff4f2;
+}
+
+.navbar .active {
+  padding-bottom: 2px;
+  border-bottom: 2px solid #49557e;
+}
+
+.navbar li {
+  cursor: pointer;
+}
+
+.search-icon {
+  font-size: 20px; /* Taille de l'icône de recherche */
+  color: #333; /* Couleur de l'icône */
+  cursor: pointer; /* Curseur en forme de main au survol */
+  position: relative;
+}
+
+.bag-icon {
+  font-size: 20px; /* Taille de l'icône du panier */
+  color: #333; /* Couleur de l'icône */
+  cursor: pointer; /* Curseur en forme de main au survol */
+  position: relative;
+}
+
+.search-icon:hover,
+.bag-icon:hover {
+  color: tomato; /* Changement de couleur au survol */
+}
+
+.dot {
+  width: 8px; /* Taille du point */
+  height: 8px; /* Taille du point */
+  background-color: tomato; /* Couleur du point */
+  border-radius: 50%; /* Forme ronde */
+  position: absolute; /* Position absolue pour le placer correctement */
+  top: -2px; /* Ajustement vertical */
+  right: -2px; /* Ajustement horizontal */
+}
+
+.navbar-search-icon {
+  position: relative; /* Permet de positionner le point orange correctement */
+  display: flex;
+  align-items: center;
+}
+.nav-profile-dropdown {
+  position: absolute;
+  display: none;
+  right: 0;
+  z-index: 1000;
+  width: 130px; /* Ajustement pour un bon alignement */
+  background-color: #fff2ef;
+  padding: 10px 12px; /* Ajout d'un peu plus d'espace */
+  border-radius: 4px;
+  border: 1px solid tomato;
+  outline: 2px solid white;
+  list-style: none;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Permet de bien espacer les éléments */
+  min-height: 80px; /* Ajustement pour une bonne séparation */
+}
+
+.navbar-profile:hover .nav-profile-dropdown {
+  display: flex;
+}
+
+.nav-profile-dropdown li {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Espacement entre icône et texte */
+  font-size: 13px;
+  padding: 8px 0;
+  white-space: nowrap;
+  justify-content: center; /* Centre les éléments horizontalement */
+}
+
+.nav-profile-dropdown li svg {
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+.nav-profile-dropdown li p {
+  margin: 0;
+  flex-grow: 1;
+  text-align: center; /* Centre le texte */
+}
+
+.nav-profile-dropdown li:hover {
+  color: tomato;
+}
+
+/* Ajout d'un séparateur stylé */
+.nav-profile-dropdown hr {
+  width: 100%;
+  border: none;
+  border-top: 1px solid rgba(255, 99, 71, 0.5);
+  margin: 5px 0;
+}
+
+@media (max-width: 1050px) {
+  .navbar .logo {
+    width: 140px;
+  }
+
+  .navbar-menu {
+    gap: 20px;
+    font-size: 17px;
+  }
+
+  .navbar-right {
+    gap: 30px;
+  }
+
+  .navbar-right .bag-icon {
+    width: 22px;
+  }
+  .navbar-right .search-icon {
+    width: 22px;
+  }
+  .navbar-right button {
+    padding: 8px 25px;
+  }
+}
+@media (max-width: 900px) {
+  .navbar .logo {
+    width: 120px;
+  }
+
+  .navbar-menu {
+    gap: 15px;
+    font-size: 16px;
+  }
+
+  .navbar-right {
+    gap: 20px;
+  }
+
+  .navbar-right .bag-icon {
+    width: 20px;
+  }
+  .navbar-right .search-icon {
+    width: 20px;
+  }
+  .navbar-right button {
+    padding: 7px 20px;
+    font-size: 15px;
+  }
+}
+@media (max-width: 750px) {
+  .navbar-menu {
+    display: none;
+  }
+}

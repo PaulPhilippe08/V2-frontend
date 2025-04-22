@@ -1,0 +1,84 @@
+.food-item {
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  position: relative; /* Nécessaire pour le positionnement absolu */
+}
+
+.food-item:hover {
+  transform: scale(1.05);
+}
+
+.food-item-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.custom-button {
+  background-color: tomato !important;
+  border-color: tomato !important;
+  color: white !important;
+  font-size: 14px;
+  padding: 5px 10px;
+}
+
+.custom-button:hover {
+  background-color: #e04c3c !important;
+  border-color: #e04c3c !important;
+}
+
+.food-item .card-body {
+  padding: 15px;
+}
+
+.food-item .card-title {
+  margin-bottom: 10px;
+}
+
+.food-item .card-text {
+  margin-bottom: 15px;
+}
+
+.add-icon,
+.remove-icon {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0 10px;
+}
+
+.first-add {
+  color: tomato;
+}
+
+.add-icon {
+  color: #28a745;
+}
+
+.remove-icon {
+  color: #dc3545;
+}
+
+.add-icon:hover,
+.remove-icon:hover,
+.first-add:hover {
+  opacity: 0.8;
+}
+
+.food-item-counter {
+  display: flex;
+  align-items: center; /* Alignement vertical au centre */
+  justify-content: center; /* Alignement horizontal au centre */
+  gap: 10px; /* Espacement entre les éléments */
+  padding: 6px;
+  border-radius: 50px;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre pour un effet visuel */
+}
+
+/* Abaisser légèrement le compteur */
+.food-item-counter p {
+  margin-top: 18px; /* Ajustez cette valeur selon vos besoins */
+}
