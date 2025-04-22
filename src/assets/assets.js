@@ -41,13 +41,13 @@ import menu_7 from "./menu_7.avif";
 import menu_8 from "./menu_8.jpeg";
 
 import logo from "./logo.jpg";
-import icon from "./bag_icon.png";
+
 import app_store from "./app_store.jpeg";
 import play_store from "./play_store.jpeg";
 
 export const assets = {
   logo,
-  icon,
+
   app_store,
   play_store,
 };
