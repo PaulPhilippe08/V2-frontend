@@ -14,7 +14,7 @@ const Footer = () => {
       <div className="footer-contents">
         <div className="footer-content-left">
           {/* Remplace cette ligne si ton logo vient d'un import */}
-          <img src="src/assets/logo.jpg" alt="Logo" />
+          <img src="/logo.jpg" alt="Logo" />
           <p className="custom-text">
             Baron Life - More than a restaurant, a culinary experience. Immerse
             yourself in a world where the art of gastronomy meets modern
