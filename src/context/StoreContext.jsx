@@ -12,7 +12,7 @@ const StoreContextProvider = ({ children }) => {
 
   const [token, setToken] = useState(localStorage.getItem("token") || "");
   const [food_list, setFoodList] = useState([]);
-  const [url] = useState("https://v2-backend-jhey.onrender.com/api");
+  const [url] = useState("https://v2-backend-jhey.onrender.com");
 
   // Sauvegarde automatique dans localStorage quand cartItems change
   useEffect(() => {
@@ -51,7 +51,7 @@ const StoreContextProvider = ({ children }) => {
   useEffect(() => {
     const fetchFoodList = async () => {
       try {
-        const response = await axios.get(`${url}/food/list`);
+        const response = await axios.get(`${url}/api/food/list`);
         setFoodList(response.data.data);
       } catch (error) {
         console.error("Erreur de chargement des produits", error);
