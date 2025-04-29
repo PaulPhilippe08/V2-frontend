@@ -12,7 +12,7 @@ const StoreContextProvider = ({ children }) => {
 
   const [token, setToken] = useState(localStorage.getItem("token") || "");
   const [food_list, setFoodList] = useState([]);
-  const url = "https://v2-backend-jhey.onrender.com";
+  const [url] = useState("https://v2-backend-jhey.onrender.com/api");
 
   // Sauvegarde automatique dans localStorage quand cartItems change
   useEffect(() => {
