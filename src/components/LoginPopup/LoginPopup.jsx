@@ -24,9 +24,9 @@ const LoginPopup = ({ setShowLogin }) => {
     let newUrl = url;
 
     if (currState === "Login") {
-      newUrl += "/api/user/login";
+      newUrl += "https://v2-backend-jhey.onrender.com/api/user/login";
     } else {
-      newUrl += "/api/user/register";
+      newUrl += "https://v2-backend-jhey.onrender.com/api/user/register";
     }
     const response = await axios.post(newUrl, data);
     if (response.data.success) {
