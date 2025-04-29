@@ -51,7 +51,7 @@ const StoreContextProvider = ({ children }) => {
   useEffect(() => {
     const fetchFoodList = async () => {
       try {
-        const response = await axios.get(`${url}/api/food/list`);
+        const response = await axios.get(`${url}/food/list`);
         setFoodList(response.data.data);
       } catch (error) {
         console.error("Erreur de chargement des produits", error);
